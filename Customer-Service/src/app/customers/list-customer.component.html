@@ -1,0 +1,27 @@
+<div>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Qualification</th>
+                <th>Hobbies</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{ customer.id }}</td>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.gender }}</td>
+                <td>{{ customer.qualification }}</td>
+                <td>{{ customer.hobbies}}</td>
+                <td>
+                    <button (click)="editCustomer(customer)" class="btn btn-warning">Edit</button>
+                    <button (click)="deleteCustomer(customer)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

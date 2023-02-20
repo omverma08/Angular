@@ -1,0 +1,14 @@
+<!-- 
+<app-customers></app-customers> -->
+<h3>Customer Service</h3>
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+    <li>
+        <a [routerLink]="['/list']" routerLinkActive="router-link-active" >List</a>
+    </li>
+    <li>
+        <a [routerLink]="['/edit/0']" routerLinkActive="router-link-active" >Create</a>
+    </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
